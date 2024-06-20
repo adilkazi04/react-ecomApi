@@ -1,0 +1,54 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+ 
+}
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  scrollbar-color: rgb(98 84 243);
+  scrollbar-width: thin;
+ 
+}
+
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+p, button {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+

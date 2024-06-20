@@ -1,0 +1,154 @@
+.cart-page {
+  padding: 20px;
+}
+
+.cart-page>h2 {
+  margin-bottom: 10px;
+  color: lightcoral;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cart-item button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.cart-total {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3;
+}
+
+.cart-size {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .cart-page {
+    padding: 15px;
+
+  }
+
+  .cart-page>h2 {
+    font-size: 20px;
+  }
+
+  .checkout-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-table,
+  .cart-table thead,
+  .cart-table tbody,
+  .cart-table th,
+  .cart-table td,
+  .cart-table tr {
+    display: block;
+  }
+
+  .cart-table th {
+    display: none;
+  }
+
+  .cart-table td {
+    border: none;
+    position: relative;
+
+    text-align: left;
+  }
+
+  .cart-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+  }
+
+  .cart-page {
+    padding: 10px;
+  }
+
+  .checkout-button {
+    font-size: 0.8em;
+    padding: 7px 14px;
+  }
+
+  .cart-item-image {
+    width: 101px;
+    height: 121px;
+  }
+  .cart-count{
+    font-size: 16px;
+  }
+  .checkout-button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .cart-table {
+    border: 1px solid black;
+  }
+  .cart-page {
+    padding: 5px;
+  }
+
+  .cart-page>h2 {
+    font-size:16px;
+  }
+
+  .checkout-button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .cart-count{
+    font-size: 16px;
+  }
+
+  .cart-item-image {
+    width: 101px;
+    height: 121px;
+  }
+
+  .cart-table td {
+    padding-left:7%;
+   
+  }
+}
