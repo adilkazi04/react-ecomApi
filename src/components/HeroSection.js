@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../styles/HeroSection.css"; // Import the CSS file
+import "../styles/HeroSection.css"; 
 
 
 
@@ -22,9 +22,10 @@ const HeroSection = () => {
           </div>
       
           <div className="hero-section-image">
+           {/* eslint-disable-next-line */}
               <img
                 src="images/ecomm-bg.webp"
-                alt="hero-section-photo"
+                alt="hero section photo"
                 className="img-bg"
               />
           </div>

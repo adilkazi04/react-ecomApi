@@ -12,7 +12,7 @@ const ProductDetail = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`https://fakestoreapi.com/products/${id}`)
+    axios.get(`https://api.escuelajs.co/api/v1/products/${id}`)
       .then(response => {
         setProduct(response.data);
         setIsLoading(false);
@@ -34,9 +34,9 @@ const ProductDetail = () => {
   };
 
   const handleAddToCart = () => {
-    
     console.log('Product:', product);
     console.log('Quantity:', quantity);
+    
   };
 
   if (isLoading) {
@@ -46,12 +46,12 @@ const ProductDetail = () => {
   return (
     <div className="product-detail">
       <div className="product-detail__image">
-        <img src={product.image} alt={product.title} />
+        <img src={product.images[0]} alt={product.title} />
       </div>
       <div className="product-detail__content">
         <h2>{product.title}</h2>
         <p className="description">{product.description}</p>
-        <p className="price">{product.price}</p>
+        <p className="price">${product.price}</p>
         <div className="quantity-control">
           <Button icon="pi pi-minus" onClick={handleDecrement} />
           <InputNumber value={quantity} onChange={(e) => setQuantity(e.value)} showButtons min={1} />
