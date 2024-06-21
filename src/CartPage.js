@@ -39,7 +39,7 @@ const CartPage = () => {
           <tbody>
             {cartItems.map(item => (
               <tr key={item.id} className="cart-item">
-                <td><img src={item.image} alt={item.title} className="cart-item-image" /></td>
+                <td><img src={item.images} alt={item.title} className="cart-item-image" /></td>
                 <td className='cart-size'><Link to={`/products/${item.id}`}>{item.title}</Link></td>
                 <td className='cart-size' >₹{item.price}</td>
                 <td>
